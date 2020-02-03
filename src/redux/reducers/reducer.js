@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import conterReducer from './counterReducer'
+import counterReducer from './counterReducer'
 import visibleReducer from './visibleReducer'
 
 const reducers = combineReducers({
