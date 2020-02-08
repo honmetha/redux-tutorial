@@ -5,7 +5,7 @@ import { subtractCounter } from '../redux/actions/actions'
 class ButtonDown extends Component {
   render() {
     return (
-      <button onClick={this.props.subtractCounter}>Substract</button>
+      <button onClick={this.props.HandleMinus}>Substract</button>
     )
   }
 }

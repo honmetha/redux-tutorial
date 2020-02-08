@@ -1,9 +1,17 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import { toggleVisible } from '../redux/actions/actions'
 
-export default class ButtonVisibility extends Component {
+class ButtonVisibility extends Component {
   render() {
     return (
-      <button>Show/Hide</button>
+      <button onClick={this.props.handleVisibility}>Show/Hide</button>
     )
   }
 }
+
+const mapDispatchToProps = {
+  handleVisibility: toggleVisible
+};
+
+export default connect(null, mapDispatchToProps)(ButtonVisibility);
